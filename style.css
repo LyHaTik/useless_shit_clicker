@@ -1,3 +1,14 @@
+:root {
+  --m: 4rem;
+  --red: #FF6565;
+  --pink: #FF64F9;
+  --purple: #6B5FFF;
+  --blue: #4D8AFF;
+  --green: #5BFF89;
+  --yellow: #FFEE55;
+  --orange: #FF6D1B;
+}
+
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -11,6 +22,15 @@ body {
 }
 
 .button {
+  border:calc(0.08*var(--m)) solid transparent;
+  border-radius:calc(0.7*var(-m));
+  padding:calc(0.5*var(-m));
+  display:flex;
+  justify-content:center;
+  curor:pointer;
+}
+
+butt {
   padding: 20px 40px;
   font-size: 24px;
   border: 2px solid #333;
@@ -18,7 +38,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s;
-}
+} -->
 
 .button:hover {
   background-color: #ffa07a;
