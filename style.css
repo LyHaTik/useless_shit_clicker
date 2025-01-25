@@ -1,3 +1,8 @@
+@keyframes animates {
+  0%{background-position: 0}
+  100%{background-position: 200%}
+}
+
 :root {
   --m: 4rem;
   --red: #FF6565;
@@ -10,11 +15,18 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 
+    linear-gradient(#121213, #121213),
+    linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%),
+    linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+  background-blend-mode: overlay, overlay, normal;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
 }
 
 .container {
@@ -42,6 +54,27 @@ butt {
 
 .button:hover {
   background-color: #ffa07a;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animates {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 200%;
+  }
 }
 
 .counter {
