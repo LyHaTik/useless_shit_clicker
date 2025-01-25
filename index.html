@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useless Clicker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .button {
+            padding: 20px 40px;
+            font-size: 24px;
+            border: 2px solid #333;
+            background-color: #ffcccb;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .button:hover {
+            background-color: #ffa07a;
+        }
+        .counter {
+            margin-top: 20px;
+            font-size: 32px;
+            color: #333;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Useless Clicker</h1>
+        <button class="button" id="uselessButton">Click me!</button>
+        <div class="counter" id="clickCounter">Clicks: 0</div>
+        <div class="message" id="uselessMessage"></div>
+    </div>
+</body>
+</html>
